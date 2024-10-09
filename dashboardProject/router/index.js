@@ -5,6 +5,8 @@ import Dashboard from '@/views/dashboard.vue'
 import Customers from '@/views/customers.vue'
 import Tickets from '@/views/tickets.vue'
 import Connections from '@/views/connections.vue'
+import automation from '@/views/automation.vue'
+import workflow from '@/views/workflow.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,21 +36,21 @@ const router = createRouter({
             name: "customers",
             component: Customers
         },
-        // {
-        //     path: "/automation",
-        //     name: "automation",
-        //     component: Automation
-        // },
-        // {
-        //     path: "/connections",
-        //     name: "connections",
-        //     component: Connections
-        // },
-        // {
-        //     path: "/workflow",
-        //     name: "workflow",
-        //     component: Workflow
-        // },
+        {
+            path: "/automation",
+            name: "automation",
+            component: automation
+        },
+        {
+            path: "/connections",
+            name: "connections",
+            component: Connections
+        },
+        {
+            path: "/workflow",
+            name: "workflow",
+            component: workflow
+        },
     ]
 })
 
